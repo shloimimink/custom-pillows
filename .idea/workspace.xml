@@ -2,36 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8012b80d-600d-4f42-9391-b126f793e3e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/admin portal/AddPillow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/admin portal/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/Spinner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/Contact.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/img/pillowSlider1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/img/pillowSlider2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pages/img/pilowSlider3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pillows/Pillow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/auth/authContext.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/auth/authReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/pillows/AppReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/pillows/GlobalState.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/setAuthToken.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/materialize.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contact.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Paralex.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Paralex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pages/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/img/resort1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/img/resort2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pages/img/resort3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pillows/Pillows.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pillows/Pillows.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pillows/SearchPillows.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pillows/SearchPillows.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pillows/SinglePillow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pillows/SinglePillow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admin portal/AddPillow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admin portal/AddPillow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/pillows/Pillow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/pillows/Pillow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/pillows/AppReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/pillows/AppReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/pillows/GlobalState.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/pillows/GlobalState.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,11 +19,6 @@
         <option value="JavaScript File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>start</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -119,20 +89,42 @@
       <workItem from="1593130829836" duration="5692000" />
       <workItem from="1593564704806" duration="4713000" />
       <workItem from="1594170035076" duration="3220000" />
+      <workItem from="1594326682351" duration="117000" />
+      <workItem from="1594340929877" duration="5732000" />
     </task>
+    <task id="LOCAL-00001" summary="added pillows">
+      <created>1594326703687</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594326703687</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added pillows" />
+    <option name="LAST_COMMIT_MESSAGE" value="added pillows" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1667" y="180" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592529620906">
       <screen x="1440" y="-157" width="1920" height="1057" />
     </state>
     <state x="1667" y="180" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877/1440.-157.1920.1057/3360.-106.1920.1057@1440.-157.1920.1057" timestamp="1592529620906" />
+    <state x="2007" y="-51" key="CommitChangelistDialog2" timestamp="1594326703417">
+      <screen x="1440" y="-157" width="1920" height="1057" />
+    </state>
+    <state x="2007" y="-51" key="CommitChangelistDialog2/0.23.1440.877/1440.-157.1920.1057/3360.-106.1920.1057@1440.-157.1920.1057" timestamp="1594326703417" />
     <state x="3830" y="87" key="SettingsEditor" timestamp="1591906737175">
       <screen x="3360" y="-106" width="1920" height="1057" />
     </state>
     <state x="3830" y="87" key="SettingsEditor/0.23.1440.877/1440.-157.1920.1057/3360.-106.1920.1057@3360.-106.1920.1057" timestamp="1591906737175" />
+    <state x="2000" y="111" key="Vcs.Push.Dialog.v2" timestamp="1594326705583">
+      <screen x="1440" y="-157" width="1920" height="1057" />
+    </state>
+    <state x="2000" y="111" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.-157.1920.1057/3360.-106.1920.1057@1440.-157.1920.1057" timestamp="1594326705583" />
   </component>
 </project>

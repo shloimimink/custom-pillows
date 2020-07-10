@@ -1,12 +1,16 @@
 import React, {Fragment, useContext, useEffect} from 'react';
 import {GlobalContext} from "../../context/pillows/GlobalState";
+import {AuthContext} from "../../context/auth/authContext";
 import Parallax from "../layout/Paralex";
 import {Link} from "react-router-dom";
 import {SRLWrapper} from "simple-react-lightbox";
 
 
+const confirm = window.confirm
+
 const Pillow = ({location, match}) => {
-    const {getPillow, pillow} = useContext(GlobalContext);
+    const {getPillow, pillow, deletePillow} = useContext(GlobalContext);
+    const {isAuthenticated} = useContext(AuthContext);
 
     useEffect(() => {
         getPillow(match.params.id);
@@ -17,9 +21,15 @@ const Pillow = ({location, match}) => {
         return null
     }
 
+    const handleDelete = async () => {
+        const confirmed = confirm('Are you sure ?')
+        if (confirmed) {
+            await deletePillow(pillow._id)
+        }
+    }
+
     return (
         <Fragment>
-
             <Parallax pillow={pillow}/>
             <br/>
             <div className="row">
@@ -27,6 +37,16 @@ const Pillow = ({location, match}) => {
                     <div className="btn red lighten-4 green-text waves-effect waves-red">
                         <Link to="/pillows">Back to pillows</Link>
                     </div>
+                    {isAuthenticated && (
+                        <Fragment>
+                            <button className="btn blue lighten-2" style={{marginLeft: 15}}>
+                                <i className="far fa-edit"/>
+                            </button>
+                            <button onClick={handleDelete} className="btn red darken-1" style={{marginLeft: 10}}>
+                                <i className="far fa-trash-alt"/>
+                            </button>
+                        </Fragment>
+                    )}
                 </div>
             </div>
             <SRLWrapper>

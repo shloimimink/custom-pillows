@@ -74,6 +74,21 @@ export const GlobalProvider = ({children}) => {
         }
     };
 
+    const deletePillow = async (id) => {
+        try {
+            const res = await axios.delete(`/api/v1/pillows/${id}`)
+            dispatch({
+                type: 'DELETE_PILLOW',
+                payload: res.data
+            })
+        } catch (err) {
+            dispatch({
+                type: 'PILLOW_ERROR',
+                payload: err.response.data.err
+            })
+        }
+    }
+
     return (<GlobalContext.Provider value={{
         pillow: state.pillow,
         pillows: state.pillows,
@@ -81,7 +96,8 @@ export const GlobalProvider = ({children}) => {
         loading: state.loading,
         getPillow,
         getPillows,
-        addPillow
+        addPillow,
+        deletePillow
     }}>
         {children}
     </GlobalContext.Provider>)

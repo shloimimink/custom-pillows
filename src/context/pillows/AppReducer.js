@@ -12,6 +12,13 @@ export default (state, action) => {
                 pillows: [action.payload, ...state.pillows],
                 loading: false,
             }
+        case 'DELETE_PILLOW':
+            return {
+                ...state,
+                pillows: state.pillows.filter(pillow => pillow._id !== action.payload),
+                pillow: null,
+                loading: false,
+            }
         case 'GET_PILLOW':
             return {
                 ...state,

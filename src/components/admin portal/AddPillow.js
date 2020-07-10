@@ -15,21 +15,21 @@ const AddPillow = (props) => {
     }
 
     const {addPillow, error} = useContext(GlobalContext);
-    const [pillow, setPillow] = useState(initialState)
+    const [newPillow, setNewPillow] = useState(initialState)
     const [loading, setLoading] = useState(false)
     console.log(error);
 
 
     const handleChange = (e) => {
-        setPillow({...pillow, [e.target.name]: e.target.value})
+        setNewPillow({...newPillow, [e.target.name]: e.target.value})
     }
 
     const handleAttach = (e) => {
         console.log(e.target.files)
         if (e.target.files.length === 1) {
-            setPillow({...pillow, [e.target.name]: e.target.files[0]})
+            setNewPillow({...newPillow, [e.target.name]: e.target.files[0]})
         } else {
-            setPillow({...pillow, [e.target.name]: e.target.files})
+            setNewPillow({...newPillow, [e.target.name]: e.target.files})
 
         }
     }
@@ -39,15 +39,15 @@ const AddPillow = (props) => {
         setLoading(true);
 
         const formData = new FormData();
-        formData.append('pillowNumber', pillow.pillowNumber)
-        formData.append('pillowColor', pillow.pillowColor)
-        formData.append('price', pillow.price)
-        formData.append('size', pillow.size)
-        formData.append('description', pillow.description)
-        formData.append('image', pillow.image)
-        formData.append('bannerImage', pillow.bannerImage)
-        for (let i = 0; i < pillow.galleryImages.length; i++) {
-            formData.append('galleryImages', pillow.galleryImages[i])
+        formData.append('pillowNumber', newPillow.pillowNumber)
+        formData.append('pillowColor', newPillow.pillowColor)
+        formData.append('price', newPillow.price)
+        formData.append('size', newPillow.size)
+        formData.append('description', newPillow.description)
+        formData.append('image', newPillow.image)
+        formData.append('bannerImage', newPillow.bannerImage)
+        for (let i = 0; i < newPillow.galleryImages.length; i++) {
+            formData.append('galleryImages', newPillow.galleryImages[i])
         }
 
         const wasSuccessful = await addPillow(formData)
@@ -55,7 +55,7 @@ const AddPillow = (props) => {
             props.history.push('/pillows')
         }
         setLoading(false);
-        //setPillow(initialState);
+        //setNewPillow(initialState);
     };
 
     return (
@@ -83,7 +83,7 @@ const AddPillow = (props) => {
                                 <div className="file-path-wrapper">
                                     <input className="file-path validate" type="text"
                                            placeholder="Upload main card image"
-                                           value={pillow.image && pillow.image.name}
+                                           value={newPillow.image && newPillow.image.name}
                                     />
                                 </div>
                             </div>
@@ -101,7 +101,7 @@ const AddPillow = (props) => {
                                         className="file-path validate"
                                         type="text"
                                         placeholder="Upload banner image"
-                                        value={pillow.bannerImage && pillow.bannerImage.name}
+                                        value={newPillow.bannerImage && newPillow.bannerImage.name}
                                     />
                                 </div>
                             </div>
@@ -120,7 +120,7 @@ const AddPillow = (props) => {
                                         className="file-path validate"
                                         type="text"
                                         placeholder="Upload image gallery"
-                                        value={[...pillow.galleryImages].map(img => img.name).join(', ')}
+                                        value={[...newPillow.galleryImages].map(img => img.name).join(', ')}
                                     />
                                 </div>
                             </div>
@@ -130,7 +130,7 @@ const AddPillow = (props) => {
                                     <input
                                         type="text"
                                         name="pillowNumber"
-                                        value={pillow.pillowNumber}
+                                        value={newPillow.pillowNumber}
                                         id="number"
                                         onChange={handleChange}
                                     />
@@ -143,7 +143,7 @@ const AddPillow = (props) => {
                                     <input
                                         type="text"
                                         name="pillowColor"
-                                        value={pillow.pillowColor}
+                                        value={newPillow.pillowColor}
                                         id="color"
                                         onChange={handleChange}
                                     />
@@ -156,7 +156,7 @@ const AddPillow = (props) => {
                                     <input
                                         type="text"
                                         name="price"
-                                        value={pillow.price}
+                                        value={newPillow.price}
                                         id="price"
                                         onChange={handleChange}
                                     />
@@ -169,7 +169,7 @@ const AddPillow = (props) => {
                                     <input
                                         type="text"
                                         name="size"
-                                        value={pillow.size}
+                                        value={newPillow.size}
                                         id="size"
                                         onChange={handleChange}
                                     />
@@ -182,7 +182,7 @@ const AddPillow = (props) => {
                                     <input
                                         type="text"
                                         name="description"
-                                        value={pillow.description}
+                                        value={newPillow.description}
                                         id="description"
                                         onChange={handleChange}
                                     />
